@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+:root {
+  --color-white: #fff;
+  --color-back-btn-view: #0072d2;
+  --color-back-btn-trailer: #131318;
+}
+
+@font-face {
+  font-family: "B612-bold";
+  src: url("../font/B612-Bold.ttf");
+}
+
+@font-face {
+  font-family: "B612-regular";
+  src: url("../font/B612-Regular.ttf");
+}
+
+body {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.container-page {
+  width: 100vw;
+  height: 100%;
+  background: url("../img/fundo.jpg") no-repeat center center;
+  filter: brightness(70%);
+  background-size: cover;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 45px;
+  color: var(--color-white);
+  font-family: B612-bold;
+  /* margin-bottom: 120px; */
+  margin-bottom: 7.5rem;
+}
+
+.header > p {
+  font-size: 1.25rem;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  line-height: 1.5rem;
+}
+.header > h1 {
+  font-size: 6rem;
+  line-height: 7.313rem;
+  /* margin-top: 35px; */
+  margin-top: 2.188rem;
+}
+
+.container-content {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.container-content .capa > img {
+  width: 11.5rem;
+  height: 16rem;
+}
+
+.content {
+  width: 720px;
+}
+
+.content > p {
+  font-family: "B612-regular";
+  color: var(--color-white);
+  line-height: 2rem;
+  font-size: 1.25rem;
+  margin-bottom: 2.625rem;
+}
+
+.assessment {
+  display: flex;
+  list-style: none;
+  gap: 6.688rem;
+}
+
+.assessment > li {
+  display: flex;
+  gap: 0.875rem;
+  align-items: center;
+}
+
+.assessment li > span {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  font-size: B612-bold;
+  line-height: 1.813rem;
+  font-weight: bold;
+}
+
+.assessment li > .star {
+  cursor: pointer;
+}
+
+.buttons {
+  margin-top: 2.813rem;
+  display: flex;
+  gap: 1.313rem;
+}
+
+.buttons > .btn-view {
+  width: 11.5rem;
+  height: 3.25rem;
+  background: var(--color-back-btn-view);
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  font-family: sans-serif;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.buttons > .btn-trailer {
+  width: 7.188rem;
+  height: 3.25rem;
+  background: var(--color-back-btn-trailer);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 3px;
+  color: var(--color-white);
+  text-align: center;
+  line-height: 3.25rem;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: sans-serif;
+}
